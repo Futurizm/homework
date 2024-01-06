@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* CSS reset style */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;     
+    color: #FFFFFF;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+
+/* CSS reset style */
+
+
+body {
+    overflow-x: hidden;
+    background-image: url(img/background/marc-olivier-paquin-2_RQhbu0ZDQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+
+.header__container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    min-height: 80px;
+}
+
+
+
+.menu__list {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+
+.menu__link:hover {
+    color: rgb(224, 224, 63);
+    transition: all 0.1s ease 0.1s;
+}
+
+.menu__link {
+    font-size: 20px;
+}
+
+.main-firstblock {
+    display: flex;
+}
+
+.main__header { 
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+.main__concert__pargraph {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.main__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+
+
+.main__item {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: yellow;
+}
+
+.main__item:last-child{
+    margin-bottom: 0px;
+}
+
+.main__image {
+    display: flex;
+    justify-content: center;
+}
+
+
+.main__announcement {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.main__announcement h2 {
+    font-weight: 500;
+}
+
+.main__content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__image__1 {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.main__title__1{
+    font-weight: 700;
+    font-size: 30px;
+    transform: translateX(120px);
+    margin-bottom: 7px;
+}
+
+.main__image__1 {
+    min-width: 150px;
+    max-height: 250px;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
+.main__image__2 {
+    min-width: 150px;
+    max-height: 250px;
+    border-radius: 10%;
+}
+
+
+.main__image__3 {
+    min-width: 150px;
+    max-height: 250px;
+    border-radius: 10%;
+}
+
+
+
+
+
+.main__image__4 {
+    min-width: 374px;
+    max-height: 250px;
+    border-radius: 10%;
+}
+
+
+.main__image__6 {
+    min-width: 374px;
+    max-height: 250px;
+    border-radius: 10%;
+}
+
+
+.content__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+}
+
+.content__column {
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+}
+
+.content__column:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu__list {
+        justify-content: space-around;
+    }
+
+    ._container {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        box-sizing: content-box;
+        overflow-y: hidden !important;
+    }
+
+    .content__row {
+        justify-content: center;
+    }
+    
+    
+}
+
+
+@media (max-width: 360px) {
+    
+    .menu__items {
+        margin-bottom: 20px;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px -30px;
+    }
+
+    .main__header {
+        text-align: center;
+    }
+}
